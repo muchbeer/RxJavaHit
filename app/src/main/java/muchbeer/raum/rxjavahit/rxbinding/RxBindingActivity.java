@@ -51,6 +51,7 @@ public class RxBindingActivity extends AppCompatActivity {
             }
         });*/
 
+//rxjava using binding
 Disposable disposable = RxTextView.textChanges(inputText)
                         .subscribe(new Consumer<CharSequence>() {
                             @Override
