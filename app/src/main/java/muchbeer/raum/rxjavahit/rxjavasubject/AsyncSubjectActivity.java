@@ -52,7 +52,7 @@ public class AsyncSubjectActivity extends AppCompatActivity {
         asyncSubject.subscribe(getThirdObserver());
     }
 
-
+//Async Subject : - Only emits the last value of the Observable .
     void asyncSubjectDemo2() {
 
 
@@ -113,7 +113,7 @@ public class AsyncSubjectActivity extends AppCompatActivity {
 
     }
 
-//emit to all that are subscribe to it
+//emit all item at the time of the subscribe to it
     void publishSubjectDemo1() {
 
         Observable<String> observable = Observable.just("JAVA", "KOTLIN", "XML", "JSON")
